@@ -2,9 +2,11 @@
 <%= link_to "Edit this task", edit_task_path(@task) %>
 <p><%= @task.details %></p>
 <% if @task.completed %>
-  <p>This task is completed</p>
+  <p><i class="far fa-check-square"></i> This task is completed</p>
 <% else %>
-  <p>This task is not completed yet</p>
+  <p><i class="far fa-square"></i> This task is not completed yet</p>
 <% end %>
 <hr>
-<%= link_to "Back to list", tasks_path %>
+<%= link_to tasks_path do %>
+  <i class="fas fa-history"></i> Back to list
+<% end %>

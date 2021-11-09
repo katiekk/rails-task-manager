@@ -1,3 +1,5 @@
 <%= render "form", restaurant: @restaurant %>
 <hr>
-<%= link_to "Back to task", task_path(@task) %>
+<%= link_to task_path(@task) do %>
+  <i class="fas fa-history"></i> Back to task
+<% end %>
