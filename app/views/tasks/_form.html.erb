@@ -2,5 +2,5 @@
   <%= f.input :title %>
   <%= f.input :details %>
   <%= f.input :completed unless @task.new_record? %>
-  <%= f.submit @task.new_record? ? 'Create Task' : 'Update Task' %>
+  <%= f.submit @task.new_record? ? 'Create Task' : 'Update Task', class: "btn btn-default" %>
 <% end %>
